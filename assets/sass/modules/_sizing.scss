@@ -5,15 +5,27 @@
 /*
   Width Styling
  */
-.width-half {
+
+.width-onehundred {
   width: 100%;
+}
+
+.width-max {
+  width: 95%;
+  max-width: 80rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.width-half {
+  width: 95%;
   @include bp(tablet) {
     width: 48%;
   }
 }
 
 .width-third {
-  width: 100%;
+  width: 95%;
   @include bp(tablet) {
     width: 48%;
   }
@@ -23,14 +35,14 @@
 }
 
 .width-fourth {
-  width: 100%;
-  @include bp(tablet) {
+  width: 95%;
+  @include bp(mobile-lg) {
     width: 48%;
   }
-  @include bp(smallscreen) {
+  @include bp(tablet) {
     width: 31%;
   }
-  @include bp(desktop) {
+  @include bp(smallscreen) {
     width: 23%;
   }
 }

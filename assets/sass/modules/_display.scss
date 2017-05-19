@@ -9,25 +9,117 @@
   flex-wrap: wrap;
 }
 
+.flex-simple {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
 .overlay {
-  opacity: 0;
-  &:hover {
-    opacity: 1;
-    background: $transparent-gray;
-  }
-}
-
-.margin-edge {
-  margin: 0 10px;
-  @include bp(tablet) {
-    margin: 0 2%;
-  }
+  // Overlay is initially visible
+  opacity: 1;
+  background: $transparent-gray;
+  text-align: center;
+  line-height: 2.33em;
+  align-self: flex-end;
+  height: 75px;
   @include bp(smallscreen) {
-    margin: 0 4%;
+    height: inherit;
+    opacity: 0;
+    padding: 0 20%;
+    align-self: auto;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
-.admin-bar {
-  position: relative;
-  top: 32px;
+.margin {
+  &-edge {
+    margin: 0 10px;
+    @include bp(tablet) {
+      margin: 0 2%;
+    }
+    @include bp(smallscreen) {
+      margin: 0 4%;
+    }
+  }
+  &-top {
+    margin-top: 30px;
+  }
+  &-bottom {
+    margin-bottom: 30px;
+  }
+  &-right {
+    margin-right: 30px;
+  }
+  &-left {
+    margin-left: 30px;
+  }
+}
+
+.pad {
+  padding: 10px;
+  &-top {
+    padding-top: 10px;
+  }
+  &-bottom {
+    padding-bottom: 10px;
+  }
+  &-left {
+    padding-left: 10px;
+  }
+  &-right {
+    padding-right: 10px;
+  }
+}
+
+.none {
+  &-tablet {
+    display: none;
+    @include bp(tablet) {
+      display: inherit;
+    };
+  }
+  &-smallscreen {
+    display: none;
+    @include bp(smallscreen) {
+      display: inherit;
+    }
+  }
+}
+
+.float {
+  &-left {
+    float: left;
+  }
+  &-right {
+    float: right;
+  }
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.border-bottom {
+  border-bottom: 2px solid $dark-gray;
+}
+
+.border-top {
+  border-top: 2px solid $dark-gray;
+}
+
+.off-screen {
+  position: absolute;
+  left: -5000px;
+}
+
+#wpadminbar {
+  top: 0;
 }

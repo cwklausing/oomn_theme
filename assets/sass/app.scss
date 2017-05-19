@@ -8,11 +8,13 @@
 @import "modules/utility";
 @import "modules/variables";
 @import "modules/display";
+@import "modules/navigation";
 @import "modules/typography";
 @import "modules/sizing";
+@import "modules/icons";
 
 // Import partials styling
-@import "partials/navigation";
 @import "partials/header";
 @import "partials/footer";
 @import "partials/front-page";
+@import "partials/content";

@@ -1,0 +1,30 @@
+/* ===========================================================
+  Navigation
+============================================================ */
+
+#menu-main-menu, #menu-footer-menu {
+  @include bp(tablet) {
+    padding: 20px 0;
+  }
+  li {
+    text-align: center;
+  }
+  a {
+    font-weight: 700;
+  }
+}
+
+#menu-main-menu {
+  @include bp(tablet) {
+    margin: 20px 10%;
+  }
+}
+
+.menu-item {
+  width: 100%;
+  margin: 10px 0;
+  @include bp(tablet) {
+    width: auto;
+    margin: 0;
+  }
+}

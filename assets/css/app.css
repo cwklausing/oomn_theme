@@ -191,11 +191,28 @@ optgroup {
   justify-content: space-around;
   flex-wrap: wrap; }
 
+.flex-simple {
+  display: flex;
+  align-items: center; }
+
+.flex-column {
+  flex-direction: column; }
+
 .overlay {
-  opacity: 0; }
-  .overlay:hover {
-    opacity: 1;
-    background: rgba(40, 40, 40, 0.8); }
+  opacity: 1;
+  background: rgba(40, 40, 40, 0.8);
+  text-align: center;
+  line-height: 2.33em;
+  align-self: flex-end;
+  height: 75px; }
+  @media (min-width: 980px) {
+    .overlay {
+      height: inherit;
+      opacity: 0;
+      padding: 0 20%;
+      align-self: auto; }
+      .overlay:hover {
+        opacity: 1; } }
 
 .margin-edge {
   margin: 0 10px; }
@@ -205,29 +222,115 @@ optgroup {
   @media (min-width: 980px) {
     .margin-edge {
       margin: 0 4%; } }
+.margin-top {
+  margin-top: 30px; }
+.margin-bottom {
+  margin-bottom: 30px; }
+.margin-right {
+  margin-right: 30px; }
+.margin-left {
+  margin-left: 30px; }
 
-.admin-bar {
-  position: relative;
-  top: 32px; }
+.pad {
+  padding: 10px; }
+  .pad-top {
+    padding-top: 10px; }
+  .pad-bottom {
+    padding-bottom: 10px; }
+  .pad-left {
+    padding-left: 10px; }
+  .pad-right {
+    padding-right: 10px; }
 
-/* ===========================================================
-  Typography
-============================================================ */
-h2 {
-  text-transform: uppercase; }
+.none-tablet {
+  display: none; }
+  @media (min-width: 768px) {
+    .none-tablet {
+      display: inherit; } }
+.none-smallscreen {
+  display: none; }
+  @media (min-width: 980px) {
+    .none-smallscreen {
+      display: inherit; } }
 
-.whitetext {
-  color: white; }
+.float-left {
+  float: left; }
+.float-right {
+  float: right; }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.border-bottom {
+  border-bottom: 2px solid #404040; }
+
+.border-top {
+  border-top: 2px solid #404040; }
 
 .off-screen {
   position: absolute;
   left: -5000px; }
 
+#wpadminbar {
+  top: 0; }
+
+/* ===========================================================
+  Navigation
+============================================================ */
+@media (min-width: 768px) {
+  #menu-main-menu, #menu-footer-menu {
+    padding: 20px 0; } }
+#menu-main-menu li, #menu-footer-menu li {
+  text-align: center; }
+#menu-main-menu a, #menu-footer-menu a {
+  font-weight: 700; }
+
+@media (min-width: 768px) {
+  #menu-main-menu {
+    margin: 20px 10%; } }
+
+.menu-item {
+  width: 100%;
+  margin: 10px 0; }
+  @media (min-width: 768px) {
+    .menu-item {
+      width: auto;
+      margin: 0; } }
+
+/* ===========================================================
+  Typography
+============================================================ */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #212121; }
+
+h1 {
+  font-size: 3.6rem;
+  padding: 30px 0; }
+
+h2 {
+  font-size: 3.2rem; }
+
+h3 {
+  font-size: 2.8rem;
+  line-height: 3.6rem; }
+
+p {
+  font-size: 2.4rem;
+  line-height: 3.6rem; }
+
 a {
+  font-size: 1.8rem;
   text-decoration: none;
-  color: black; }
+  color: #212121;
+  letter-spacing: 1px; }
   a:hover {
-    color: #efcf4f;
+    color: #909090;
     text-decoration: none; }
 
 ul {
@@ -239,20 +342,39 @@ li {
   text-transform: uppercase;
   list-style: none; }
 
+span {
+  font-size: 2.4rem;
+  line-height: 3.6rem; }
+
+.center {
+  text-align: center; }
+
+.whitetext {
+  color: white; }
+
 /* ===========================================================
   Sizing
 ============================================================ */
 /*
   Width Styling
  */
-.width-half {
+.width-onehundred {
   width: 100%; }
+
+.width-max {
+  width: 95%;
+  max-width: 80rem;
+  margin-right: auto;
+  margin-left: auto; }
+
+.width-half {
+  width: 95%; }
   @media (min-width: 768px) {
     .width-half {
       width: 48%; } }
 
 .width-third {
-  width: 100%; }
+  width: 95%; }
   @media (min-width: 768px) {
     .width-third {
       width: 48%; } }
@@ -261,14 +383,14 @@ li {
       width: 30%; } }
 
 .width-fourth {
-  width: 100%; }
-  @media (min-width: 768px) {
+  width: 95%; }
+  @media (min-width: 500px) {
     .width-fourth {
       width: 48%; } }
-  @media (min-width: 980px) {
+  @media (min-width: 768px) {
     .width-fourth {
       width: 31%; } }
-  @media (min-width: 1224px) {
+  @media (min-width: 980px) {
     .width-fourth {
       width: 23%; } }
 
@@ -289,27 +411,32 @@ li {
   background-size: cover; }
 
 /* ===========================================================
-  Navigation
+  Icons
 ============================================================ */
-#menu-main-menu {
-  padding: 20px 0; }
-  #menu-main-menu li {
-    width: 33.33%;
-    text-align: center; }
+.social-media svg {
+  height: 54px;
+  width: 54px;
+  fill: #212121; }
+  .social-media svg:hover {
+    fill: #909090; }
 
 /* ===========================================================
   Header
 ============================================================ */
+header {
+  padding-top: 10px; }
+
 /* ===========================================================
   Footer
 ============================================================ */
+footer {
+  margin: 30px 0; }
+
 /* ===========================================================
   Front Page
 ============================================================ */
-.pottery {
-  margin: 10px 0; }
-  @media (min-width: 980px) {
-    .pottery {
-      margin: 20px 0; } }
+/* ===========================================================
+  Content
+============================================================ */
 
 /*# sourceMappingURL=app.css.map */

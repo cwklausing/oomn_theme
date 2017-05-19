@@ -1,11 +1,14 @@
 /* ===========================================================
-  Navigation
+  Icons
 ============================================================ */
 
-#menu-main-menu {
-  padding: 20px 0;
-  li {
-    width: 33.33%;
-    text-align: center;
+.social-media {
+  svg {
+    height: 54px;
+    width: 54px;
+    fill: $black;
+    &:hover {
+      fill: $hover-color;
+    }
   }
 }

@@ -2,28 +2,41 @@
   Typography
 ============================================================ */
 
-h1 {
+html {
+  font-size: 62.5%;
+}
 
+body {
+  font-family: $primary;
+  color: $black;
+}
+
+h1 {
+  font-size: 3.6rem;
+  padding: 30px 0;
 }
 
 h2 {
-  text-transform: uppercase;
+  font-size: 3.2rem;
 }
 
-.whitetext {
-  color: white;
+h3 {
+  font-size: 2.8rem;
+  line-height: 3.6rem;
 }
 
-.off-screen {
-  position: absolute;
-  left: -5000px;
+p {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
 }
 
 a {
+  font-size: 1.8rem;
   text-decoration: none;
-  color: black;
+  color: $black;
+  letter-spacing: 1px;
   &:hover {
-    color: $gold;
+    color: $hover-color;
     text-decoration: none;
   }
 }
@@ -37,4 +50,17 @@ ul {
 li {
   text-transform: uppercase;
   list-style: none;
+}
+
+span {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.whitetext {
+  color: white;
 }
