@@ -1,20 +1,12 @@
-// Import Bourbon
-@import "bourbon/bourbon";
+// Import utility index
+@import "utility/index";
 
-// Import base styling
-@import "base/reset";
+// Import base index
+@import "base/index";
 
-// Import modules styling
-@import "modules/utility";
-@import "modules/variables";
-@import "modules/display";
-@import "modules/navigation";
-@import "modules/typography";
-@import "modules/sizing";
-@import "modules/icons";
+// Import components index
+@import "components/index";
 
-// Import partials styling
-@import "partials/header";
-@import "partials/footer";
-@import "partials/front-page";
-@import "partials/content";
+// Import templates index
+@import "templates/index";
+

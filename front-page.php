@@ -1,30 +1,24 @@
 <?php
 /**
  * Template Name: Front Page
+ *
+ * @package cwkbase
  */
 
 get_header();
 ?>
 
-<div class="flexing margin-edge">
+<div class="primary">
+
   <?php if ( have_posts() ) :
 
-    while( have_posts() ) : the_post();
+    while ( have_posts() ) : the_post(); ?>
 
-    $title = get_the_title();
+    <?php get_template_part( '/parts/content', 'front-page' ); ?>
 
-  ?>
-
-  <div class="width-half">  
-    <h2><?php echo $title; ?></h2>
-  </div>
-
-  <?php
-
-    endwhile;
+  <?php endwhile;
 
   endif;
-
   ?>
 
 </div>
