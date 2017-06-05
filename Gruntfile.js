@@ -34,7 +34,7 @@ module.exports = function(grunt) {
 				tasks: ['sass']
 			},
 			js: {
-				files: ['assets/js/dist/app.js', 'assets/js/*.js'],
+				files: '**/*.js',
 				tasks: ['rollup']
 			}
 		}
@@ -45,3 +45,4 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.registerTask('default', ['watch', 'uglify']);
 };
+
