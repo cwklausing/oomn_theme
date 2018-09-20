@@ -206,20 +206,20 @@ span {
   object-fit: cover;
 }
 
-.site-description {
+.home__content {
   background-color: white;
   padding: 5rem 0;
   display: flex;
   justify-content: center;
 }
 
-.site-description__text {
+.home__content p {
   max-width: 65rem;
   line-height: 1.4;
   letter-spacing: 1px;
 }
 
-.posts {
+.recent-posts {
   max-width: 60rem;
   margin: 40px auto;
   display: grid;
@@ -228,7 +228,7 @@ span {
   grid-gap: 60px;
 }
 
-.posts__title {
+.recent-posts__title {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
   text-align: center;
@@ -238,26 +238,28 @@ span {
   padding: 2rem;
 }
 
-.post {
+.recent-post {
+  text-decoration: none;
 }
 
-.post__title {
+.recent-post__title {
+  color: #1f1f1f;
+  text-decoration: none;
   font-size: 2rem;
 }
 
-.post__image {
+.recent-post__image {
   height: 300px;
   width: 100%;
   object-fit: cover;
   margin: 20px 0;
 }
 
-.post__summary {
-}
-
-.post__excerpt {
+.recent-post__excerpt {
   font-size: 1.3rem;
   line-height: 1.3;
+  color: #1f1f1f;
+  text-decoration: none;
   padding: 0 10px;
 }
 

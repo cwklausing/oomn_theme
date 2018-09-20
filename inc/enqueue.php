@@ -18,9 +18,7 @@ add_action( 'wp_enqueue_scripts', 'cwkbase_styles' );
 // Enqueue theme javascript
 if ( ! function_exists( 'cwkbase_js' ) ) {
   function cwkbase_js() {
-
-    wp_enqueue_script( 'app_js', get_template_directory_uri() . '/assets/js/dist/bundle.js', array('jquery'), '', true ) ;
-
+    wp_enqueue_script( 'masonry_layout', get_template_directory_uri() . '/assets/js/masonry.js', array(), '', true ) ;
   }
 }
 

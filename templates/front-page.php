@@ -8,19 +8,15 @@
 get_header();
 ?>
 
-<div class="primary">
+<?php if ( have_posts() ) :
 
-  <?php if ( have_posts() ) :
+  while ( have_posts() ) : the_post(); ?>
 
-    while ( have_posts() ) : the_post(); ?>
+  <?php get_template_part( '/parts/content', 'front-page' ); ?>
 
-    <?php get_template_part( '/parts/content', 'front-page' ); ?>
+<?php endwhile;
 
-  <?php endwhile;
-
-  endif;
-  ?>
-
-</div>
+endif;
+?>
 
 <?php get_footer(); ?>
