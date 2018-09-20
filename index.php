@@ -22,6 +22,7 @@ get_header();
 
       <div class="the-post__single">
         <h2 class="the-post__title"><?php the_title(); ?></h2>
+        <div class="the-post__content"><?php the_content(); ?></div>
       </div>
 
     <?php
