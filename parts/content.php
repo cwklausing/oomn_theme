@@ -2,7 +2,7 @@
 /**
  * Default Content
  *
- * @package cwkbase;
+ * @package orgofmn;
  */
 ?>
 

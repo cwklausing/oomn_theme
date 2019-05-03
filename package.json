@@ -1,28 +1,23 @@
 {
-  "name": "warehouse701",
+  "name": "organizersofmn",
   "version": "1.0.0",
-  "description": "Base theme for use on other Connor Klausing themes",
+  "description": "A very basic wordpress theme skeleton--to be used for developing other Wordpress themes.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "grunt": "grunt --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Connor Klausing",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwklausing/oomn_theme.git"
+  },
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "grunt-cli": "^1.2.0",
-    "node-sass": "^3.13.0"
+  "bugs": {
+    "url": "https://github.com/cwklausing/oomn_theme/issues"
   },
-  "devDependencies": {
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-preset-env": "^1.6.0",
-    "grunt": "^1.0.1",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-uglify": "^2.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-rollup": "^1.0.1",
-    "object-fit-images": "^3.2.3",
-    "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-node-resolve": "^3.0.0"
+  "homepage": "https://github.com/cwklausing/oomn_theme#readme",
+  "dependencies": {
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1"
   }
 }

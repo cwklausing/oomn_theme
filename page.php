@@ -2,7 +2,7 @@
 /**
  * Page template
  *
- * @package cwkbase
+ * @package orgofmn
  */
 
 get_header();

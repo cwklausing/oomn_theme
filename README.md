@@ -1,3 +1,4 @@
-# CWK Base Theme
+# OOMN theme
 
-A very basic wordpress theme skeleton--to be used for developing other Wordpress themes.
+Todo:
+Add CSS minification

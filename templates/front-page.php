@@ -2,7 +2,7 @@
 /**
  * Template Name: Front Page
  *
- * @package cwkbase
+ * @package orgofmn
  */
 
 get_header();

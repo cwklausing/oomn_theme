@@ -1,4 +1,3 @@
-console.log("hello");
 function resizeGridItem(item) {
   var grid = document.getElementsByClassName("grid-container")[0];
   var rowHeight = parseInt(

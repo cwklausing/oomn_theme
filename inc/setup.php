@@ -17,5 +17,8 @@ if ( ! function_exists( sbconnor_setup ) ) {
 	// Title tags
 	add_theme_support( 'title-tag' );
 
+	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'max', 1800, 9999 );
+
 	add_action( 'after_setup_theme', 'sbconnor_setup' );
 }
