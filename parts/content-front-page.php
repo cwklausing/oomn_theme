@@ -11,7 +11,7 @@
  $read_more_text = get_field('read_more_text', 'option')
 ?>
 
-<div class="wrapper">
+<div class="page-wrapper">
 	<main class="home">
 		<div class="home__featured-img">
 			<img src="<?php echo esc_url( $featured_image ); ?>" />
@@ -62,7 +62,8 @@
 				<h2 class="recent-posts__title"><?php echo esc_html( $older_posts ); ?></h2>
 				<?php
 					$args = array(
-						'post_type' => 'post'
+						'post_type' => 'post',
+						'offset' => 1
 					);
 	
 					$post_query = new WP_Query($args);
@@ -70,11 +71,12 @@
 						while($post_query->have_posts() ) : $post_query->the_post();
 
 						$excerpt = get_field('excerpt');
+						$recent_featured_image = get_field('featured_image')['sizes']['large']
 					?>
 					<a href="<?php the_permalink(); ?>" class="recent-post grid-item">
 						<div class="recent-post__content">
 							<h3 class="recent-post__title"><?php the_title(); ?></h3>
-							<img src="<?php the_post_thumbnail_url(); ?>" class="recent-post__image" />
+							<img src="<?php echo esc_url( $recent_featured_image ); ?>" class="recent-post__image" />
 							<div class="recent-post__excerpt">
 								<?php echo $excerpt; ?>
 							</div>
