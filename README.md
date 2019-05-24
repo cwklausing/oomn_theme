@@ -1,4 +1,6 @@
 # OOMN theme
 
 Todo:
-Add CSS minification
+
+- Add CSS minification
+- add lightbox for images
