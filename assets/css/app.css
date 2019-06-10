@@ -318,6 +318,39 @@ object {
   max-width: 100%;
 }
 
+.wp-block-image .alignleft,
+.wp-block-image .alignright {
+  float: none;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+@media (min-width: 900px) {
+  .wp-block-image .alignleft,
+  .wp-block-image .alignright {
+    max-width: 500px;
+  }
+  .wp-block-image .alignleft {
+    float: left;
+    margin-left: 3%;
+  }
+  .wp-block-image .alignright {
+    float: right;
+    margin-right: 3%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .wp-block-image .alignleft {
+    margin-left: 18em;
+  }
+  .wp-block-image .alignright {
+    margin-right: 18em;
+  }
+}
+
+
+
 /**
  * 5.0 - Caption
  */
