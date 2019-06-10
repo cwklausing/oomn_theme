@@ -715,6 +715,7 @@ span {
 @media (min-width: 900px) {
   .home__featured-img img {
     height: 80vh;
+    max-height: 650px;
   }
 }
 
