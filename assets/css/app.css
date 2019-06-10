@@ -697,6 +697,7 @@ span {
   .main-nav .page_item a {
     text-shadow: 0 0 8px #1f1f1f;
     font-size: 2.8rem;
+    padding-left: 2.6rem;
   }
 }
 
