@@ -1172,8 +1172,8 @@ footer .social-media__link {
 }
 
 .entry {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 0 10px;
   padding: 5rem 0;
 }
 
@@ -1186,8 +1186,18 @@ footer .social-media__link {
 .entry__content h3,
 .entry__content h4 {
   margin-bottom: 1rem;
-  max-width: 600px;
+}
 
+@media(min-width: 600px) {
+  .entry {
+    margin: 0 20px;
+  }
+}
+
+@media(min-width: 900px) {
+  .entry {
+    margin: 0 auto;
+  }
 }
 
 /* Modal
