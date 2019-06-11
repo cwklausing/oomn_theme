@@ -1164,6 +1164,7 @@ footer .social-media__link {
 .page-template-default {
   display: flex;
   flex-direction: column;
+  min-height: 97vh;
 }
 
 .page-template-default .primary {
@@ -1172,7 +1173,6 @@ footer .social-media__link {
 
 .entry {
   max-width: 1000px;
-  min-height: 80vh;
   margin: 0 auto;
   padding: 5rem 0;
 }
