@@ -14,7 +14,7 @@ get_header();
 
       while( have_posts() ) : the_post(); ?>
 
-      <div class="post__single">
+      <div class="post__single" id="post-single">
         <h2 class="post__title"><?php the_title(); ?></h2>
         <img src="<?php echo $featured_image; ?>" class="post__banner-image" />
         <main class="post__content"><?php the_content(); ?></main>
@@ -34,6 +34,13 @@ get_header();
 
     endif; ?>
 
+</div>
+<div class="post__cta" id="post-cta">
+  <?php get_template_part( '/parts/cta-button' ); ?>
+  <div class="close-button" id="close-button">
+    <div class="first"></div>
+    <div class="second"></div>
+  </div>
 </div>
 
 <?php get_footer(); ?>

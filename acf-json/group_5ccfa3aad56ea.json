@@ -1,6 +1,6 @@
 {
     "key": "group_5ccfa3aad56ea",
-    "title": "Post Featured Image",
+    "title": "Post",
     "fields": [
         {
             "key": "field_5ccfa3b69932f",
@@ -25,6 +25,41 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_5cffb701913cd",
+            "label": "Call to Action Button Text",
+            "name": "call_to_action_button_text",
+            "type": "text",
+            "instructions": "This text will appear on the button that floats on the bottom left side of all pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5cffb78b913ce",
+            "label": "Call to Action Button Link",
+            "name": "call_to_action_button_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -44,5 +79,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1560178628
+    "modified": 1560262570
 }

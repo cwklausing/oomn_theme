@@ -4,12 +4,9 @@
 if ( ! function_exists( 'orgofmn_styles' ) ) {
   function orgofmn_styles() {
 
-  	// wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/src/vendors/bootstrap.min.css' );
-    wp_enqueue_style( 'app_css', get_template_directory_uri() . '/assets/css/app.css') ;
+    // wp_enqueue_style( 'app_css', get_template_directory_uri() . '/assets/css/app.css') ;
+    wp_enqueue_style( 'app_css', get_template_directory_uri() . '/assets/css/app.min.css') ;
     wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
-
-    // Google fonts
-    // wp_enqueue_style( 'google_fonts', "https://fonts.googleapis.com/css?family=Slabo+27px|Open+Sans", false );
   }
 }
 

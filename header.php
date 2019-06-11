@@ -42,3 +42,10 @@ $menu_array = array(
       </div>
     </div>
   </header>
+  <div id="main-modal">
+    <div class="modal-overlay"></div>
+    <div class="close-button">
+      <div class="first"></div>
+      <div class="second"></div>
+    </div>
+  </div>
