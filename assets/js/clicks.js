@@ -19,7 +19,7 @@ mobileMenuButton.addEventListener("click", function() {
 
 // Post CTA button
 
-var triggerPoint = 1000
+var triggerPoint = 1400
 var ctaButton = document.getElementById("post-cta")
 
 window.addEventListener("scroll", function() {
@@ -35,7 +35,7 @@ window.addEventListener("scroll", function() {
 // Post CTA 'close' button
 var closeButton = document.getElementById("close-button")
 
-window.addEventListener("click", function() {
+closeButton.addEventListener("click", function() {
   ctaButton.classList.add("closed")
 })
 
