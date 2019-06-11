@@ -498,6 +498,7 @@ p,
 a,
 span {
   font-size: 1.1rem;
+  line-height: 1.4rem;
   font-family: georgia, "times new roman";
 }
 
@@ -734,7 +735,6 @@ span {
 .home__about p {
   max-width: 45rem;
   line-height: 1.4;
-  letter-spacing: 1px;
 }
 
 @media (min-width: 900px) {
@@ -1158,6 +1158,36 @@ footer .social-media__link {
   .post__cta .close-button {
     display: none;
   }
+}
+
+/* Default Page */
+.page-template-default {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-template-default .primary {
+  flex: 1 0 auto;
+}
+
+.entry {
+  max-width: 1000px;
+  min-height: 80vh;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.entry__title {
+  margin-bottom: 3rem;
+}
+
+.entry__content p,
+.entry__content h2,
+.entry__content h3,
+.entry__content h4 {
+  margin-bottom: 1rem;
+  max-width: 600px;
+
 }
 
 /* Modal
