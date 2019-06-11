@@ -626,7 +626,7 @@ span {
   .home .site-header {
     position: absolute;
     background: none;
-    padding: 45px 
+    padding: 45px;
   }
 
   .home .site-header__title-link {
@@ -658,6 +658,7 @@ span {
   text-transform: uppercase;
   max-width: 73rem;
   width: 100%;
+  line-height: 1;
 }
 
 .site-header__title-link {
@@ -1164,7 +1165,7 @@ footer .social-media__link {
 .page-template-default {
   display: flex;
   flex-direction: column;
-  min-height: 97vh;
+  min-height: 100vh;
 }
 
 .page-template-default .primary {
