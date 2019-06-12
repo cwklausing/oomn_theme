@@ -27,13 +27,40 @@
             "mime_types": ""
         },
         {
+            "key": "field_5d013d54fe906",
+            "label": "Show Call to Action Button",
+            "name": "show_call_to_action_button",
+            "type": "true_false",
+            "instructions": "If selected, this will show a call-to-action button with a link at the bottom of this post.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_5cffb701913cd",
             "label": "Call to Action Button Text",
             "name": "call_to_action_button_text",
             "type": "text",
             "instructions": "This text will appear on the button that floats on the bottom left side of all pages.",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5d013d54fe906",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -52,7 +79,15 @@
             "type": "url",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5d013d54fe906",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -79,5 +114,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1560262570
+    "modified": 1560362394
 }

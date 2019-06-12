@@ -5,6 +5,7 @@
  */
 
 $featured_image = get_field('full-width_image')['sizes']['max'];
+$show_cta = get_field('show_call_to_action_button');
 
 get_header();
 ?>
@@ -35,12 +36,14 @@ get_header();
     endif; ?>
 
 </div>
-<div class="post__cta" id="post-cta">
-  <?php get_template_part( '/parts/cta-button' ); ?>
-  <div class="close-button" id="close-button">
-    <div class="first"></div>
-    <div class="second"></div>
+<?php if ( $show_cta ) : ?>
+  <div class="post__cta" id="post-cta">
+    <?php get_template_part( '/parts/cta-button' ); ?>
+    <div class="close-button" id="close-button">
+      <div class="first"></div>
+      <div class="second"></div>
+    </div>
   </div>
-</div>
+<?php endif; ?>
 
 <?php get_footer(); ?>

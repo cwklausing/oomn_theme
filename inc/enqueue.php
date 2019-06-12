@@ -4,8 +4,8 @@
 if ( ! function_exists( 'orgofmn_styles' ) ) {
   function orgofmn_styles() {
 
-    // wp_enqueue_style( 'app_css', get_template_directory_uri() . '/assets/css/app.css') ;
-    wp_enqueue_style( 'app_css', get_template_directory_uri() . '/assets/css/app.min.css') ;
+    wp_enqueue_style( 'app_css', get_template_directory_uri() . '/assets/css/app.css') ;
+    // wp_enqueue_style( 'app_css', get_template_directory_uri() . '/assets/css/app.min.css') ;
     wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
   }
 }

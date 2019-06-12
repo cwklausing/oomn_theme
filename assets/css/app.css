@@ -497,16 +497,18 @@ strong {
 p,
 a,
 span {
-  font-size: 1.1rem;
-  line-height: 1.4rem;
   font-family: georgia, "times new roman";
+  line-height: 1.5rem;
+  font-size: 1.06rem;
+  margin-bottom: 0.75rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   p,
   a,
   span {
     font-size: 1.2rem;
+    line-height: 1.8rem;
   }
 }
 
@@ -629,8 +631,19 @@ span {
     padding: 45px;
   }
 
-  .home .site-header__title-link {
+  .home .site-header__title-link,
+  .home .main-nav li {
     background: none;
+    transition: transform 200ms ease-in-out;
+  }
+
+  .home .site-header__title-link:hover,
+  .home .main-nav li:hover {
+    transform: scale(1.04);
+  }
+
+  .home .site-header__title-link:focus {
+    outline: none;
   }
 
   .home .site-header__title,
@@ -719,13 +732,6 @@ span {
   object-fit: cover;
 }
 
-@media (min-width: 900px) {
-  .home__featured-img img {
-    height: 80vh;
-    max-height: 650px;
-  }
-}
-
 .home__about {
   background-color: white;
   display: flex;
@@ -739,12 +745,18 @@ span {
 }
 
 @media (min-width: 900px) {
+  .home__featured-img img {
+    height: 80vh;
+    max-height: 650px;
+  }
+
   .home__about {
     padding: 5rem 1rem;
   }
 
   .home__about p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 1.6;
   }
 }
 
@@ -821,16 +833,16 @@ span {
   text-decoration: none;
 }
 
-.latest-post__read-more:hover span {
-  border: 1px solid #66a8c3;
-  color: #66a8c3;
-}
-
 .latest-post__read-more span {
+  background-color: none;
   display: inline-block;
   padding: 1rem;
   border: 1px solid #8adeff;
-  transition: color 200ms ease-in-out, border 200ms ease-in-out;
+  transition: background-color 150ms ease-in-out;
+}
+
+.latest-post__read-more:hover span {
+  background-color: #383838;
 }
 
 /* Recent post section */
@@ -1019,12 +1031,6 @@ footer .social-media__link {
   max-width: 600px;
 }
 
-.post__content p {
-  margin-bottom: 0.75rem;
-  line-height: 1.5rem;
-  font-size: 1.06rem;
-}
-
 .post__content h4 {
   font-family: georgia, "times new roman";
   font-size: 1.12rem;
@@ -1037,8 +1043,6 @@ footer .social-media__link {
   .post__content p {
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
   }
 
   .post__content h4 {
@@ -1106,8 +1110,8 @@ footer .social-media__link {
   padding: 1rem 2rem;
   text-decoration: none;
   transition:
-    color 100ms linear,
-    border 100ms linear;
+    color 150ms linear,
+    border 150ms linear;
 
 }
 
