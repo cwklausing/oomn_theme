@@ -19,6 +19,16 @@ $menu_array = array(
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oswald:400,700" rel="stylesheet">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142137673-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142137673-1');
+  </script>
+
   <?php wp_head(); ?>
 <?php include('assets/images/icons.svg'); ?>
 </head>
