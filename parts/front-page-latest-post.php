@@ -13,6 +13,7 @@ $read_more_text = get_field('read_more_text', 'option')
     <?php
       $args = array(
         'post_type' => 'post',
+        'post_status' => array('publish'),
         'numberposts' => 1,
         'orderby' => 'post_date',
         'order' => 'DESC',

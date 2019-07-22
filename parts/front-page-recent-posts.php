@@ -12,6 +12,7 @@ $no_posts = get_field('no_posts_text');
   <?php
     $args = array(
       'post_type' => 'post',
+      'post_status' => array('publish'),
       'offset' => 1
     );
 
