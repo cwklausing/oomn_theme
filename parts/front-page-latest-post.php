@@ -33,9 +33,9 @@ $read_more_text = get_field('read_more_text', 'option')
         <div class="latest-post__text-wrap">
           <div class="latest-post__text">
             <h3 class="latest-post__title"><?php echo esc_html( $latest['post_title'] ); ?></h3>
-            <p class="latest-post__excerpt">
+            <div class="latest-post__excerpt">
               <?php echo $latest_excerpt; ?>
-            </p>
+            </div>
             <a href="<?php echo esc_url( $latest['guid']); ?>" class="latest-post__read-more">
               <span><?php echo $read_more_text ?></span>
             </a>
