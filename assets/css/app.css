@@ -831,6 +831,10 @@ span {
   margin-bottom: 2rem;
 }
 
+.latest-post__excerpt p {
+  margin-bottom: 1rem;
+}
+
 .latest-post__read-more {
   cursor: pointer;
   color: #8adeff;
