@@ -464,6 +464,18 @@ object {
 /* #################
 # Custom Styles ####
 ###################*/
+
+/*
+Colors:
+black; #1f1f1f
+dark gray: #2a2a2a
+white: #f1f1f1
+light blue: #8adeff
+light gray/blue: #c9dce3
+light gray: #9b9b9b
+light tan: #f1efe9
+*/
+
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -844,7 +856,7 @@ span {
 .latest-post__read-more span {
   background-color: none;
   display: inline-block;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border: 1px solid #8adeff;
   transition: background-color 150ms ease-in-out;
 }
@@ -893,6 +905,21 @@ span {
   color: #1f1f1f;
   text-decoration: none;
   padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.recent-post__read-more {
+  background-color: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #1f1f1f;
+  border: 1px solid #1f1f1f;
+  transition: background-color 150ms ease-in-out;
+  margin-left: 1rem;
+}
+
+.recent-post:hover .recent-post__read-more {
+  background-color: #c9dce3;
 }
 
 .recent-post__no-posts {

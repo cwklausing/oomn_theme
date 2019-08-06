@@ -5,6 +5,7 @@
 
 $older_posts = get_field('older_posts_text');
 $no_posts = get_field('no_posts_text');
+$read_more_text = get_field('read_more_text', 'option')
 ?>
 
 <div class="recent-posts grid-container">
@@ -30,6 +31,9 @@ $no_posts = get_field('no_posts_text');
         <div class="recent-post__excerpt">
           <?php echo $excerpt; ?>
         </div>
+        <span class="recent-post__read-more">
+          <?php echo $read_more_text; ?>
+        </span>
       </div>
     </a>
   
