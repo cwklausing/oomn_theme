@@ -6,6 +6,6 @@ $button_text = get_field('call_to_action_button_text');
 $button_link = get_field('call_to_action_button_link');
 ?>
 
-<a href="<?php echo esc_url( $button_link ); ?>" class="cta-button" id="cta-button">
+<a href="<?php echo esc_url( $button_link ); ?>" class="cta-button" id="cta-button" target="_blank">
   <?php echo esc_html( $button_text ); ?>
 </a>
