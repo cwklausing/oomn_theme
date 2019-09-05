@@ -12,9 +12,12 @@ $read_more_text = get_field('read_more_text', 'option')
   <h2 class="recent-posts__title"><?php echo esc_html( $older_posts ); ?></h2>
   <?php
     $args = array(
-      'post_type' => 'post',
+      'offset' => 1,
+      'order' => 'DESC',
+      'orderby' => 'post_date',
+      'post__not_in' => get_option( 'sticky_posts' ),
       'post_status' => array('publish'),
-      'offset' => 1
+      'post_type' => 'post',
     );
 
     $post_query = new WP_Query($args);
@@ -22,12 +25,12 @@ $read_more_text = get_field('read_more_text', 'option')
       while($post_query->have_posts() ) : $post_query->the_post();
 
       $excerpt = get_field('excerpt');
-      $recent_featured_image = get_field('featured_image')['sizes']['large']
+      $recent_featured_image_id = get_field('featured_image')
     ?>
     <a href="<?php the_permalink(); ?>" class="recent-post grid-item">
       <div class="recent-post__content">
         <h3 class="recent-post__title"><?php the_title(); ?></h3>
-        <img src="<?php echo esc_url( $recent_featured_image ); ?>" class="recent-post__image" />
+        <?php echo wp_get_attachment_image($recent_featured_image_id, 'large', '', ['class' => 'recent-post__image']); ?>
         <div class="recent-post__excerpt">
           <?php echo $excerpt; ?>
         </div>

@@ -4,7 +4,7 @@
  * Template for single posts
  */
 
-$featured_image = get_field('full-width_image')['sizes']['max'];
+$featured_image_id = get_field('full-width_image');
 $show_cta = get_field('show_call_to_action_button');
 
 get_header();
@@ -17,7 +17,7 @@ get_header();
 
       <div class="post__single" id="post-single">
         <h2 class="post__title"><?php the_title(); ?></h2>
-        <img src="<?php echo $featured_image; ?>" class="post__banner-image" />
+        <?php echo wp_get_attachment_image($featured_image_id, 'full', '', array('class' => 'post__banner-image')); ?>
         <main class="post__content"><?php the_content(); ?></main>
       </div>
 

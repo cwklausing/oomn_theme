@@ -5,13 +5,13 @@
  * @package orgofmn;
  */
 
- $featured_image = get_field('featured_image')['sizes']['max'];
+ $featured_image_id = get_field('featured_image');
 ?>
 
 <div class="page-wrapper">
 	<main class="home">
 		<div class="home__featured-img">
-			<img src="<?php echo esc_url( $featured_image ); ?>" />
+			<?php echo wp_get_attachment_image($featured_image_id, 'full'); ?>
 		</div>
 		<div class="home__about">
 			<?php the_content(); ?>
